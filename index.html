@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoruyi Emmanuel Osakue | Portfolio</title>
+    <!-- Importing JetBrains Mono for technical accents -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Variables & Typography */
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #1a1a2e;
+            --accent-color: #0f3460;
+            --code-color: #e94560;
+            --muted-text: #555555;
+            
+            /* Fallback to system sans-serif */
+            --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 100px 0 60px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        .location {
+            color: var(--muted-text);
+            font-size: 0.9rem;
+        }
+
+        /* Typography Accents */
+        .terminal-text {
+            font-family: var(--font-mono);
+            color: var(--code-color);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            font-family: var(--font-mono);
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        section p {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 35px;
+        }
+
+        .job h4 {
+            font-size: 1.2rem;
+            margin: 0 0 5px 0;
+        }
+
+        .company {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            margin: 0 0 10px 0;
+        }
+
+        .job ul {
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f4f4f6;
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .skill-category p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Footer & Buttons */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        footer .section-title {
+            color: #fff;
+            border-color: #333;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: transparent;
+            color: #fff;
+            font-family: var(--font-mono);
+            padding: 12px 24px;
+            text-decoration: none;
+            border: 1px solid var(--code-color);
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: var(--code-color);
+            color: #fff;
+        }
+
+        .footer-note {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            margin-top: 60px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="terminal-text">> whoami</p>
+            <h1>Omoruyi Emmanuel Osakue</h1>
+            <h2>DevOps Engineer & Educator</h2>
+            <p class="location">📍 Lagos, Nigeria</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h3 class="section-title">01. About Me</h3>
+            <p>
+                I am a DevOps Engineer and technical educator focused on building robust, scalable systems and breaking down complex engineering concepts. I leverage the quiet hours of my 4:00 AM routine to study foundational engineering principles, plan architectures, and work on my triple-monitor hardware setup.
+            </p>
+            <p>
+                Beyond optimizing deployment pipelines, I am actively transitioning into Mechatronics Engineering and robotics. I also specialize in creating clear, high-quality faceless educational content that bridges the gap between advanced technology and accessible learning.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h3 class="section-title">02. Experience & Initiatives</h3>
+            
+            <div class="job">
+                <h4>Systems and Network Administration Intern</h4>
+                <p class="company">Rosabon Financial Services</p>
+                <ul>
+                    <li>Assisted in the maintenance and optimization of enterprise network infrastructure.</li>
+                    <li>Supported day-to-day IT operations, troubleshooting system issues, and ensuring uptime.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h4>Technical Instructor & Peer Mentor</h4>
+                <p class="company">Bootcamp & Secondary Education</p>
+                <ul>
+                    <li>Mentored peers through rigorous coding bootcamps, simplifying logic and syntax for diverse learning levels.</li>
+                    <li>Instructed junior and senior secondary students, establishing a strong foundation in digital literacy and problem-solving.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h4>Open Source & Continuous Learning</h4>
+                <p class="company">Self-Driven Projects</p>
+                <ul>
+                    <li>Applicant for Google Summer of Code (GSoC) 2026.</li>
+                    <li>Actively executing a "100 Days of Code" challenge in Python to solidify backend logic.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3 class="section-title">03. Technical Profile</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h5 class="terminal-text">> core_competencies</h5>
+                    <p>DevOps, System Administration, Cloud Infrastructure, Python</p>
+                </div>
+                <div class="skill-category">
+                    <h5 class="terminal-text">> professional_development</h5>
+                    <p>ALX Professional Foundations</p>
+                </div>
+                <div class="skill-category">
+                    <h5 class="terminal-text">> current_trajectory</h5>
+                    <p>Mechatronics Engineering, Robotics</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="section-title">04. Contact</h3>
+            <p>Looking to collaborate on scalable infrastructure, open-source projects, or technical education?</p>
+            <a href="mailto:your.email@example.com" class="button">Get In Touch</a>
+            <p class="footer-note">Designed with a minimalist aesthetic. 2026.</p>
+        </div>
+    </footer>
+</body>
+</html>
